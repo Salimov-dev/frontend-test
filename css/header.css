@@ -1,0 +1,35 @@
+@import url(../css/header-nav.css);
+@import url(../css/header-head.css);
+@import url(../css/header-body.css);
+.header__content {
+  padding: 0 65px 0 50px;
+}
+.header__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__head::after {
+  content: "";
+  position: absolute;
+  background-color: #f6f6f6;
+  height: 1px;
+  left: 0;
+  right: 0;
+  top: 94px;
+}
+.header__head::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: 166px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.05)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+}

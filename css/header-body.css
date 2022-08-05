@@ -1,0 +1,105 @@
+.header__bodyImgBg {
+  z-index: -1;
+  position: absolute;
+  top: 166px;
+  right: 0;
+}
+.header__bodyImgBg img {
+  width: 770px;
+  height: 835px;
+}
+
+.body__content {
+  padding: 120px 0;
+  height: 835px;
+}
+.mainInfo__h1 {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 100%;
+  margin: 0 0 60px 0;
+}
+.mainInfo__h2 {
+  width: 673px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 120%;
+  margin: 0 0 60px 0;
+}
+.mainInfo__btn {
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  padding: 24px 60px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: white !important;
+  background: -webkit-gradient(linear, right top, left top, from(#FFCC00), to(#FFA300));
+  background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%);
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+.mainInfo__btn:hover {
+  opacity: 0.7;
+}
+.mainInfo__btn:hover .btnArrow {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+.mainInfo__btnArrow {
+  padding: 0 15px 0 0;
+  margin: 2px 0 0 0;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+.mainInfo__btnAngle {
+  position: absolute;
+  width: 50px;
+  top: -11px;
+  left: 80px;
+}
+.mainInfo__wrap {
+  width: 816px;
+}
+
+.wrapper__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+}
+.wrapper__itemAdvantages {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 40px 0;
+}
+.wrapper__itemAdvantages:last-child, .wrapper__itemAdvantages:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.wrapper__imageAdvantages {
+  width: 70px;
+  height: 70px;
+  margin: 0 20px 0 0;
+  padding: 10px 12px;
+  -webkit-box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+          box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+  border-radius: 10px;
+}
