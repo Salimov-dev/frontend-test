@@ -3,17 +3,18 @@
     // .header__body
 
     &__body {
+        position: relative;
     }
 
     &__bodyImgBg {
         z-index: -1;
         position: absolute;
-        top: 166px;
-        right: 0;
+        top: 0;
+        right: -200px;
     }
 
     &__bodyImgBg img {
-        width: 770px;
+        width: 810px;
         height: 835px;
     }
 }
@@ -24,6 +25,7 @@
     &__content {
         padding: 120px 0;
         height: 835px;
+
     }
 
     // .body__mainInfo
@@ -69,6 +71,16 @@
         transition: opacity 0.3s ease-in;
     }
 
+    &__btn::before {
+        content: "";
+        position: absolute;
+        width: 207px;
+        height: 47px;
+        top: -10px;
+        left: 80px;
+        background: url(../img/header/body/mainInfo__btnAngle.PNG) 0 0 no-repeat;
+    }
+
     &__btn:hover {
         opacity: 0.7;
     }
@@ -79,15 +91,8 @@
 
     &__btnArrow {
         padding: 0 15px 0 0;
-        margin: 2px 0 0 0;
+        margin: 1px 0 0 0;
         transition: transform 0.3s ease-in;
-    }
-
-    &__btnAngle {
-        position: absolute;
-        width: 50px;
-        top: -11px;
-        left: 80px;
     }
 
     &__wrap {
@@ -133,6 +138,50 @@
     }
 }
 
-.itemAdvantages__text {
+.content {
+
+    // .content__compliteRepairsInfo
+
+    &__compliteRepairsInfo {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: -80px;
+        bottom: 101px;
+        width: 464px;
+        background-color: white;
+        border-radius: 50px;
+        padding: 20px 40px;
+    }
+}
+.compliteRepairsInfo {
+
+    &__container {
+    }
+
+    // .compliteRepairsInfo__number
+
+    &__number {
+        margin: 0 10px 0 0;
+        font-family: 'Proxima Nova';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61 / 50 * 100%;
+        background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%), linear-gradient(0deg, #FFA300, #FFA300), linear-gradient(0deg, #4BB1BC, #4BB1BC), linear-gradient(0deg, #1767F9, #1767F9), #4633B9;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    &__smile {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px 0 0;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+    }
 }
 

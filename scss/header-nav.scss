@@ -14,6 +14,7 @@
         position: relative;
         padding-right: 80px;
         border-right: 1px solid #e8e8e8;
+        transition: color 0.3s ease-in;
     }
 
     &__list li:first-child {
@@ -40,8 +41,6 @@
         margin: 0 10px 0 0;
     }
 
-    // .nav__link
-
     &__list>li:nth-child(1n+2)::after {
         content: "";
         position: absolute;
@@ -50,6 +49,7 @@
         width: 10px;
         height: 12px;
         background: url(../img/svg/nav_arrow.svg) no-repeat 0;
+        transition: transform 0.3s ease-in;
     }
 
     &__list>li:hover::after {
@@ -60,6 +60,11 @@
         color: #ffc901;
     }
 
+    &__link {
+
+    }
+
+
 }
 
 .sub-nav {
@@ -69,15 +74,15 @@
     &__list {
         display: none;
         position: absolute;
+        z-index: 1;
         left: 30px;
         top: 30px;
         padding: 20px 0 0 0;
-        transition: color 0.3s ease-in;
         background-color: white;
     }
 
     &__list > li {
-
+        z-index: 100;
     }
 
     // .sub-nav__link
@@ -85,6 +90,7 @@
     &__link {
         display: inline-block;
         padding: 0 0 10px 15px;
+        transition: color 0.3s ease-in;
     }
 
     &__link:hover {

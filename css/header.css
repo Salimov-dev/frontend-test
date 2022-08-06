@@ -1,9 +1,6 @@
 @import url(../css/header-nav.css);
 @import url(../css/header-head.css);
 @import url(../css/header-body.css);
-.header__content {
-  padding: 0 65px 0 50px;
-}
 .header__head {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,0 +1,18 @@
+@import url(../css/wokrmans.css);
+.content__content {
+  padding: 120px 0 0 0;
+}
+.content__title {
+  text-align: center;
+}
+.content__title-h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  margin: 0 0 40px 0;
+}
+.content__title-h4 {
+  font-size: 26px;
+  line-height: 120%;
+  margin: 0 0 80px 0;
+}

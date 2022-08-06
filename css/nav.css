@@ -1,14 +1,13 @@
 .header__nav {
   position: relative;
   padding: 20px 0 20px 0;
+  border-bottom: 1px solid #000;
 }
 
 .nav__list > li {
   position: relative;
   padding-right: 80px;
   border-right: 1px solid #e8e8e8;
-  -webkit-transition: color 0.3s ease-in;
-  transition: color 0.2s ease-in;
 }
 .nav__list li:first-child {
   padding: 0 60px 0 0;
@@ -42,10 +41,6 @@
   width: 10px;
   height: 12px;
   background: url(../img/svg/nav_arrow.svg) no-repeat 0;
-  -webkit-transition: -webkit-transform 0.3s ease-in;
-  transition: -webkit-transform 0.3s ease-in;
-  transition: transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, -webkit-transform 0.3s ease-in;
 }
 .nav__list > li:hover::after {
   -webkit-transform: scaleY(-1);
@@ -54,23 +49,20 @@
 .nav__list > li:nth-child(1):hover {
   color: #ffc901;
 }
+
 .sub-nav__list {
+  min-width: 300px;
   display: none;
   position: absolute;
-  z-index: 1;
-  left: 30px;
-  top: 30px;
+  left: 0;
+  top: 20px;
   padding: 20px 0 0 0;
-  background-color: white;
-}
-.sub-nav__list > li {
-  z-index: 100;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 .sub-nav__link {
   display: inline-block;
-  padding: 0 0 10px 15px;
-  -webkit-transition: color 0.3s ease-in;
-  transition: color 0.2s ease-in;
+  padding: 0 0 10px 36px;
 }
 .sub-nav__link:hover {
   color: #ffc901;

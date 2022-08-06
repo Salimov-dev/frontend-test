@@ -67,7 +67,7 @@
   opacity: 0.5;
 }
 .menu__Star {
-  margin: -7px 7px 0 0;
+  padding: 0px 7px 4px 0;
 }
 
 .contact__firstBlock, .contact__secondBlock {

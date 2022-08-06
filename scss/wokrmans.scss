@@ -1,0 +1,101 @@
+.content {
+
+
+    // .content__workmans
+
+    &__workmans {
+        min-width: 0;
+        margin: 0 0 120px 0;
+    }
+}
+
+.workmans {
+
+    // .workmans__slide
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 0;
+        text-align: center;
+        margin: 0 30px 80px 0;
+
+    }
+
+    &__slide:last-child {
+        margin: 0 0 80px 0;
+    }
+}
+.slide {
+
+    // .slide__photo
+
+    &__photo {
+        margin: 0 0 40px 0;
+    }
+
+    &__photoImg {
+        width: 223px;
+        height: 223px;
+        border-radius: 50%;
+        margin: 0 auto !important;
+    }
+
+    // .slide__name
+
+    &__name {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 130%;
+        margin: 0 0 16px 0;
+    }
+
+    // .slide__about
+
+    &__about {
+        align-items: center;
+        font-size: 18px;
+        line-height: 160%;
+        margin: 0 0 59px 0;
+    }
+
+    // .slide__result
+
+    &__result {
+        display: flex;
+        line-height: 120%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 39px 0;
+    }
+
+    &__resultImg {
+        padding: 0 10px 0 0;
+        align-items: center;
+    }
+
+    // .slide__quote
+
+    &__quote {
+        position: relative;
+        background-color: #F6F6F6;
+        line-height: 120%;
+        text-align: left;
+        margin: 0 30px;
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    &__quote::before {
+        content: "";
+        position: absolute;
+        z-index: 110;
+        top: -8px;
+        left: 110px;
+        width: 36px;
+        height: 9px;
+        background: url(../img/content/workmans/quoteAngle.PNG) 0 0 no-repeat;
+    }
+}
+
