@@ -11,7 +11,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 12px;
+  margin: 0 0 0 12px;
 }
 .head__contact {
   text-align: right;
@@ -41,13 +41,14 @@
 .name__imgSubTitle {
   width: 166px;
   height: 9px;
-  margin-bottom: 21px;
+  margin: 0 0 21px 0;
 }
 
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 6px 0 0 0;
   font-size: 14px;
   line-height: 121.4285714286%;
 }
@@ -67,7 +68,7 @@
   opacity: 0.5;
 }
 .menu__Star {
-  padding: 0px 7px 4px 0;
+  padding: 1px 11px 4px 0;
 }
 
 .contact__firstBlock, .contact__secondBlock {
@@ -87,10 +88,13 @@
 .contact__secondBlock img {
   margin: 0 5px 0 0;
 }
+.contact__greenEllipseImg {
+  padding: 3px 0 0 0;
+}
 .contact__time {
   font-size: 14px;
   line-height: 121.4285714286%;
-  margin: 0 0 8px 0;
+  margin: 0 0 5px 0;
 }
 .contact__phone {
   font-weight: 700;

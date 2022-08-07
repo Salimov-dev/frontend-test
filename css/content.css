@@ -1,6 +1,7 @@
-@import url(../css/wokrmans.css);
+@import url(../css/content-wokrmans.css);
+@import url(../css/content-servises.css);
 .content__content {
-  padding: 120px 0 0 0;
+  padding-top: 120px;
 }
 .content__title {
   text-align: center;

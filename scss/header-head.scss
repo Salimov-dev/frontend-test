@@ -13,7 +13,7 @@
     &__name {
         display: flex;
         flex-direction: column;
-        margin-left: 12px;
+        margin: 0 0 0 12px;
     }
 
     // .head__menu
@@ -67,7 +67,7 @@
     &__imgSubTitle {
         width: 166px;
         height: 9px;
-        margin-bottom: 21px;
+        margin: 0 0 21px 0;
     }
 }
 
@@ -77,6 +77,7 @@
 
     &__list {
         display: flex;
+        padding: 6px 0 0 0;
         font-size: 14px;
         line-height: 17 / 14 * 100%;
     }
@@ -100,7 +101,7 @@
      }
 
     &__Star {
-        padding: 0px 7px 4px 0;
+        padding: 1px 11px 4px 0;
     }
 }
 
@@ -120,10 +121,14 @@
         margin: 0 5px 0 0;
     }
 
+    &__greenEllipseImg {
+        padding: 3px 0 0 0;
+    }
+
     &__time {
         font-size: 14px;
         line-height: 17 / 14 * 100%;
-        margin: 0 0 8px 0;
+        margin: 0 0 5px 0;
     }
 
     // .contact__phone
