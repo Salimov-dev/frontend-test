@@ -1,0 +1,115 @@
+.content__workmans {
+    position: relative;
+}
+
+.content__workmans .slick-list {
+    overflow: hidden;
+    max-width: 1708px;
+}
+
+.content__workmans .slick-track{
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+}
+
+.content__workmans .slick-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+        @media (max-width: 375px) {
+            justify-content: flex-start;
+        }
+}
+
+.content__workmans .slick-arrow{
+    position: absolute;
+    top: 216px;
+    z-index: 10;
+    font-size: 0;
+        @media (max-width: 768px) {
+                top: 154px;
+            }
+}
+
+
+.content__workmans .slick-arrow.slick-prev{
+    left: -59px;
+    background: url(../img/svg/prev-arrow.svg) 0 0 / 100% no-repeat;
+    width: 120px;
+    height: 120px;
+        @media (max-width: 768px) {
+        left: -54px;
+        top: 154px;
+        width: 107px;
+        }
+        @media (max-width: 375px) {
+            left: -22px;
+            top: 147px;
+            width: 90px;
+        }
+}
+
+.content__workmans .slick-arrow.slick-next{
+    right: -63px;
+    background: url(../img/svg/next-arrow.svg) 0 0 / 100% no-repeat;
+    width: 120px;
+    height: 120px;
+        @media (max-width: 768px) {
+        right: -63px;
+        top: 154px;
+        width: 107px;
+        }
+        @media (max-width: 375px) {
+        right: -22px;
+        top: 147px;
+        width: 90px;
+        }
+}
+
+.content__workmans .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__workmans .slick-dots li{
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px 20px;
+        @media (max-width: 375px) {
+            margin: 0 12px 10px 12px;
+        }
+}
+
+.content__workmans .slick-dots li.slick-active{
+    background-color: transparent;
+    outline: 4px solid #000000;
+    border-radius: 2px;
+        @media (max-width: 375px) {
+            border-radius: 2px;
+            outline: 3px solid #000000;
+        }
+}
+
+.content__workmans .slick-dots li.slick-active button{
+    background-color: transparent;
+}
+
+.content__workmans .slick-dots li button{
+    font-size: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background-color: black;
+        @media (max-width: 375px) {
+            width: 5px;
+            height: 5px;
+        }
+}
+
+.content__workmans .slick-arrow.slick-disabled {
+    opacity: 0.3;
+}

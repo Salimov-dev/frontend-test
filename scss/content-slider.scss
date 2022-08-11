@@ -1,0 +1,150 @@
+.workmans {
+
+    &__slide {
+        margin: 0 0 17px 0;
+    }
+
+}
+.slide {
+
+    &__photo {
+        margin: 0 0 40px 0;
+            @media (max-width: 768px) {
+                margin: 0 0 33px 0;
+            }
+            @media (max-width: 375px) {
+                margin: 0 0 22px 0;
+            }
+    }
+
+    &__photo-img {
+        width: 223px;
+        height: 223px;
+        border-radius: 50%;
+        margin: 0 auto !important;
+    }
+
+    &__photo-img {
+        width: 223px;
+        height: 223px;
+            @media (max-width: 768px) {
+                width: 162px;
+                height: 162px
+            }
+            @media (max-width: 375px) {
+                width: 211px;
+                height: 211px
+            }
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 130%;
+        margin: 0 0 16px 0;
+            @media (max-width: 1366px) {
+                font-size: 22px;
+            }
+            @media (max-width: 1024px) {
+                font-size: 20px;
+            }
+    }
+
+    &__about {
+        align-items: center;
+        font-size: 18px;
+        line-height: 120%;
+        margin: 0 0 35px 0;
+            @media (max-width: 1366px) {
+                font-size: 16px;
+            }
+            @media (max-width: 1024px) {
+                font-size: 14px;
+                padding: 0 59px;
+                margin: 0 0 23px 0;
+            }
+            @media (max-width: 768px) {
+                padding: 0 18px;
+            }
+            @media (max-width: 375px) {
+                padding: 0 46px;
+            }
+    }
+
+    &__result {
+        display: flex;
+        line-height: 120%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 39px 0;
+            @media (max-width: 1024px) {
+                font-size: 14px;
+                padding: 0 50px;
+                align-items: flex-start;
+                margin: 0 0 28px 0;
+            }
+            @media (max-width: 768px) {
+                padding: 0 20px;
+            }
+            @media (max-width: 375px) {
+                padding: 17px 43px 0 43px;
+                align-items: center;
+            }
+    }
+
+    &__resultImg {
+        padding: 0 10px 0 0;
+        align-items: center;
+    }
+
+    &__result img {
+            @media (max-width: 1024px) {
+                height: 16px;
+            }
+    }
+
+    &__quote {
+        position: relative;
+        background-color: #F6F6F6;
+        line-height: 120%;
+        text-align: left;
+        margin: 0 30px;
+        padding: 16px;
+        border-radius: 14px;
+            @media (max-width: 1024px) {
+                font-size: 14px;
+                margin: 0 17px 40px 17px;
+            }
+            @media (max-width: 768px) {
+                font-size: 12px;
+                margin: 0 5px 40px 5px;
+            }
+            @media (max-width: 375px) {
+                font-size: 12px;
+                margin: 0 52px 55px 47px;
+            }
+    }
+
+    &__quote::before {
+        content: "";
+        position: absolute;
+        z-index: 110;
+        top: -8px;
+        left: 110px;
+        width: 36px;
+        height: 9px;
+        background: url(../img/content/workmans/quoteAngle.PNG) 0 0 no-repeat;
+    }
+
+    &__bottom-block {
+        min-height: 224px;
+        text-align: left;
+        @media (max-width: 768px) {
+            min-height: 189px;
+        }
+        @media (max-width: 375px) {
+            // height: 80px;
+        }
+    }
+
+}

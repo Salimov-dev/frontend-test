@@ -7,13 +7,23 @@
   font-size: 16px;
   color: #000000;
 }
-
-._containerBig {
-  max-width: 1920px;
-  text-align: right;
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
+@media (max-width: 1366px) {
+  ._container {
+    padding: 0 143px;
+  }
+}
+@media (max-width: 1024px) {
+  ._container {
+    padding: 0 87px;
+  }
+}
+@media (max-width: 768px) {
+  ._container {
+    padding: 0 59px;
+  }
+}
+@media (max-width: 375px) {
+  ._container {
+    padding: 0 24px;
+  }
 }

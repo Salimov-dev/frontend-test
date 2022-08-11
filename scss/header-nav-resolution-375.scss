@@ -1,0 +1,23 @@
+.header {
+
+    &__resolution-375 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 14px 0;
+        display: none;
+        @media (max-width: 375px) {
+            display: flex;
+        }
+    }
+
+    &__nav-burger {
+    }
+
+    &__bnt-connect {
+    }
+}
+.main-info {
+
+    &__btn {
+    }
+}

@@ -1,0 +1,91 @@
+.header__body {
+  position: relative;
+}
+
+.body__complite-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 101;
+  right: 135px;
+  bottom: 101px;
+  width: 464px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+          box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+  border-radius: 61px;
+  padding: 20px 40px;
+}
+@media (max-width: 1550px) {
+  .body__complite-info {
+    right: 37px;
+    bottom: 170px;
+  }
+}
+@media (max-width: 1366px) {
+  .body__complite-info {
+    right: 37px;
+    bottom: 220px;
+  }
+}
+@media (max-width: 1024px) {
+  .body__complite-info {
+    width: 299px;
+    right: 57px;
+    bottom: 128px;
+    padding: 10px 25px;
+  }
+}
+@media (max-width: 375px) {
+  .body__complite-info {
+    right: 38px;
+    bottom: 35px;
+  }
+}
+
+.complite-info__number {
+  margin: 0 10px 0 0;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 122%;
+  background: -webkit-gradient(linear, right top, left top, from(#FFCC00), to(#FFA300)), -webkit-gradient(linear, left bottom, left top, from(#FFA300), to(#FFA300)), -webkit-gradient(linear, left bottom, left top, from(#4BB1BC), to(#4BB1BC)), -webkit-gradient(linear, left bottom, left top, from(#1767F9), to(#1767F9)), #4633B9;
+  background: linear-gradient(270deg, #FFCC00 0%, #FFA300 100%), linear-gradient(0deg, #FFA300, #FFA300), linear-gradient(0deg, #4BB1BC, #4BB1BC), linear-gradient(0deg, #1767F9, #1767F9), #4633B9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@media (max-width: 1024px) {
+  .complite-info__number {
+    font-size: 28px;
+    line-height: 121.4285714286%;
+  }
+}
+.complite-info__smile {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px 0 0;
+}
+@media (max-width: 1024px) {
+  .complite-info__smile {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px 0 0;
+  }
+}
+.complite-info__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+}
+@media (max-width: 1024px) {
+  .complite-info__text {
+    font-size: 14px;
+  }
+}

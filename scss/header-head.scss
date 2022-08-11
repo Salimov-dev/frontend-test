@@ -1,141 +1,159 @@
 .head {
 
-    // .head__logo
-
     &__logo {
         width: 26px;
         height: 26px;
-        margin-top: 4px;
+        margin: 8px 12px 0 0;
+        @media (max-width: 375px) {
+            width: 15px;
+            height: 15px;
+            margin: 11px 4px 0 0;
+        }
     }
-
-    // .head__name
 
     &__name {
         display: flex;
-        flex-direction: column;
-        margin: 0 0 0 12px;
+        flex-direction: column; 
     }
 
-    // .head__menu
-
-    &__menu {
+    &__nav {
+        padding: 7px 0 0 41px;
+            @media (max-width: 1366px) {
+                display: none; 
+            }
     }
 
-    // .head__contact
+    &__nav-list {
+    }
 
     &__contact {
         text-align: right;
     }
 
-    // .head__name
-
-    &__name {
+    &__left-side {
+        display: flex;
+        align-items: flex-start;
     }
 
-    // .head__menu
-
-    &__menu {
-    }
-    
-    // .head__leftSide
-
-    &__leftSide {
+    &__right-side {
         display: flex;
         align-items: center;
     }
 
-    // .head__rightSide
-
-    &__rightSide {
-        display: flex;
-        align-items: center;
-    }
-}
-
-.name {
-
-    // .name__imgTitle
-
-    &__imgTitle {
-        width: 275px;
-        height: 33px;
-        margin: 28px 44px 5px 0;
-    }
-
-    // .name__imgSubTitle
-
-    &__imgSubTitle {
-        width: 166px;
-        height: 9px;
-        margin: 0 0 21px 0;
-    }
-}
-
-.menu {
-
-    // .menu__list
-
-    &__list {
+    &__nav-list {
         display: flex;
         padding: 6px 0 0 0;
         font-size: 14px;
         line-height: 17 / 14 * 100%;
     }
 
-    &__list li {
+    &__nav-list-li {
         border-bottom: solid 1px #e8e8e8;
         margin: 0 20px 0 0;
         padding: 0 0 3px 0;
      }
 
-     &__list li:last-child {
+     &__nav-list-li:last-child {
         margin: 0;
      }
 
-     &__list a:hover {
+     &__nav-list-li a:hover {
        transition: opacity 0.3s ease-in;
      }
 
-     &__list a:hover {
+     &__nav-list-li a:hover {
         opacity: 0.5;
      }
 
-    &__Star {
-        padding: 1px 11px 4px 0;
+    &__nav-star {
+        padding: 1px 11px 8px 0;
+    }
+}
+
+.name {
+
+    &__img-title {
+        display: block;
+        width: 275px;
+        height: 33px;
+        margin: 0 0 5px 0;
+            @media (max-width: 375px) {
+                width: 149px;
+        }
+    }
+
+    &__img-sub-title {
+        width: 166px;
+        height: 9px;
+            @media (max-width: 375px) {
+                display: none;
+            }
     }
 }
 
 .contact {
 
-    &__firstBlock, &__secondBlock {
+    &__time-to-call, &__phone-number {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
 
-    &__firstBlock img {
-        margin: -10px 4px 0 0;
+    &__time-to-call {
+            @media (max-width: 375px) {
+                display: none;
+            }
     }
 
-    &__secondBlock img {
+
+    &__phone-number-img {
         margin: 0 5px 0 0;
+        width: 18px;
+        height: 18px;
+            @media (max-width: 375px) {
+                display: none;
+            }
     }
 
-    &__greenEllipseImg {
+    &__green-ellipse-img {
         padding: 3px 0 0 0;
+        margin: -10px 4px 0 0;
+            @media (max-width: 375px) {
+                display: none;
+            }
     }
 
     &__time {
         font-size: 14px;
         line-height: 17 / 14 * 100%;
-        margin: 0 0 5px 0;
+        padding: 0 0 5px 0;
+            @media (max-width: 1024px) {
+                font-size: 12px;
+                line-height: 14 / 12 * 100%;
+            }
     }
-
-    // .contact__phone
 
     &__phone {
         font-weight: 700;
         font-size: 26px;
         line-height: 32 / 26 * 100%;
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 22 / 18 * 100%;
+        }
+        @media (max-width: 375px) {
+            display: none;
+        }
+    }
+
+    &__phone-375px {
+        display: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20 / 16 * 100%;
+        // padding: 0 0 2px 0;
+            @media (max-width: 375px) {
+                display: block;
+            }
     }
 }

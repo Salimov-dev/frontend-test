@@ -1,29 +1,151 @@
+.content__servises {
+  padding: 122px 0 0 0;
+}
+@media (max-width: 1024px) {
+  .content__servises {
+    padding: 57px 0 0 0;
+  }
+}
+
 .servises__wrapper {
-  max-width: 1520px;
   display: -ms-grid;
   display: grid;
   gap: 30px;
+      grid-template-areas: "post-1 post-2" "post-3 post-4";
+  -ms-grid-rows: 1fr 30px 1fr;
+  grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 30px 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-grid-rows: auto 30px auto;
-      grid-template-areas: "a a" "b b";
   margin: 0 0 120px 0;
+}
+
+@media (max-width: 1024px) {
+  .servises__wrapper {
+        grid-template-areas: "post-2 post-2 post-2" "post-1 post-3 post-4";
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 375px) {
+  .servises__wrapper {
+        grid-template-areas: "post-2" "post-1" "post-3" "post-4";
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.post-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: post-1;
+}
+
+.post-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: post-2;
+}
+
+.post-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: post-3;
+}
+
+.post-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: post-4;
+}
+
+@media (max-width: 1024px) {
+  .post-1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .post-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .post-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .post-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+}
+
+@media (max-width: 375px) {
+  .post-1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .post-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .post-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .post-4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
 }
 
 .wpapper__item {
   max-width: 100%;
 }
-.wpapper__item-h2 {
+.wpapper__item:nth-child(2) {
+  padding: 0 0 30px 0;
+}
+@media (max-width: 1024px) {
+  .wpapper__item:nth-child(2) {
+    padding: 0 0 8px 0;
+  }
+}
+.wpapper__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wpapper__item-title {
   font-weight: 800;
   font-size: 60px;
   line-height: 100%;
-  margin: 0 0 60px 0;
+}
+@media (max-width: 1366px) {
+  .wpapper__item-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .wpapper__item-title {
+    font-size: 40px;
+    margin: 0 0 0 0;
+  }
+}
+@media (max-width: 375px) {
+  .wpapper__item-title {
+    font-size: 26px;
+    text-align: center;
+  }
 }
 
-.wrapper__itemBtn {
+.wrapper__item-btn {
   display: inline-block;
   font-weight: 700;
   font-size: 18px;
@@ -34,18 +156,55 @@
   -webkit-transition: color, background-color 0.4s ease-in;
   transition: color, background-color 0.4s ease-in;
 }
-.wrapper__itemBtn:hover {
+@media (max-width: 1366px) {
+  .wrapper__item-btn {
+    font-size: 15px;
+    padding: 16px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper__item-btn {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+}
+.wrapper__item-btn:hover {
   background-color: #ffc901;
   color: white;
 }
 .wrapper__text {
-  margin: 0 0 40px 0;
+  margin: 0 0 33px 0;
 }
-.wrapper__text p {
+.wrapper__paragraph {
   font-size: 20px;
   line-height: 140%;
-  margin: 32px 0 0 0;
+  margin: 30px 0 0 0;
 }
-.wrapper__text p:first-child {
+@media (max-width: 1366px) {
+  .wrapper__paragraph {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper__paragraph {
+    font-size: 14px;
+  }
+}
+.wrapper__paragraph:first-child {
+  padding: 60px 0 0 0;
   margin: 0 0 0 0;
+}
+@media (max-width: 1024px) {
+  .wrapper__paragraph:first-child {
+    padding: 41px 0 0 0;
+  }
+}
+.wrapper__paragraph:last-child {
+  padding: 0 0 0 0;
+  margin: 30px 0 40px 0;
+}
+@media (max-width: 1024px) {
+  .wrapper__paragraph:last-child {
+    margin: 25px 0 28px 0;
+  }
 }

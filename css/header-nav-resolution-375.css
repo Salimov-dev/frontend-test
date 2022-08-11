@@ -1,0 +1,17 @@
+.header__resolution-375 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 14px 0;
+  display: none;
+}
+@media (max-width: 375px) {
+  .header__resolution-375 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

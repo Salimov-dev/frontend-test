@@ -9,6 +9,31 @@ $(document).ready(function() {
         speed: 800,
         autoplay: false,
         autoplaySpeed: 2500,
+        responsive: [
+          {
+            breakpoint: 1367,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 375,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
 
 });

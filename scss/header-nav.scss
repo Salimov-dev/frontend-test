@@ -1,31 +1,21 @@
 .header {
 
-    // .header__nav
-
     &__nav {
         position: relative;
-        padding: 17px 0 20px 0;
+        padding: 10px 0 17px 0;
+            @media (max-width: 1366px) {
+                padding: 7px 0 11px 0;
+            }
+            @media (max-width: 1024px) {
+                padding: 5px 5px 12px 0;
+            }
+            @media (max-width: 375px) {
+                display: none;
+            }
     }
-
 }
+
 .nav {
-
-    &__list > li {
-        position: relative;
-        padding-right: 90px;
-        border-right: 1px solid #ee8b8b;
-        transition: color 0.3s ease-in;
-    }
-
-    &__list > li:first-child {
-        padding: 0 60px 0 0;
-    }
-
-    &__list > li:hover .sub-nav__list{
-        display: block;
-    }
-
-    // .nav__list
 
     &__list {
         display: flex;
@@ -35,57 +25,199 @@
         line-height: 30 / 16 * 100%;
     }
 
-    &__listImage {
+    &__link {
+        padding: 0 10px 0 0;
+        white-space: nowrap;
+            @media (max-width: 1366px) {
+                font-size: 14px;
+                line-height: 17 / 14 * 100%;
+            }
+            @media (max-width: 768px) {
+                padding: 0 0 0 0;
+            }
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list-image {
+        display: inline-block;
         width: 26px;
         height: 26px;
         margin: 0 10px 0 0;
+            @media (max-width: 1366px) {
+                width: 26px;
+                height: 26px;
+            }
+            @media (max-width: 768px) {
+                width: 20px;
+                height: 20px;
+                margin: 0 4px 0 0;
+            }
     }
 
-    &__list>li:nth-child(1n+2)::after {
-        content: "";
-        position: absolute;
-        top: 9px;
-        right: 60px;
-        width: 10px;
-        height: 12px;
-        background: url(../img/svg/nav_arrow.svg) no-repeat 0;
-        transition: transform 0.3s ease-in;
+    &__list-arrow {
+        display: block;
+        width: 11px;
+        height: 11 / 2.3;
+            @media (max-width: 768px) {
+                display: none;
+            }
     }
 
-    &__list>li:hover::after {
-        transform: scaleY(-1);
+    &__list-li {
+        position: relative;
+        transition: color 0.3s ease-in;
+            @media (max-width: 1366px) {
+                padding-right: 19px; 
+                border-right: none;
+            }
+            @media (max-width: 1024px) {
+                padding-right: 0; 
+                border-right: none;
+            }
+            @media (max-width: 768px) {
+                font-size: 10px;
+            }
+    }
+
+    &__list-li:first-child .nav__list-item:after{
+        content: '|';
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right; 
+        font-size: 0;
+        color: #E5E5E5;
+        width: 51px;
+        border-right: 1px solid #E5E5E5;
+            @media (max-width: 1550px) {
+                width: 30px; 
+            }
+            @media (max-width: 1450px) {
+                width: 18px; 
+            }
+            @media (max-width: 1366px) {
+                font-size: 16px;
+                width: 14px;
+                border-right: none;
+            }
+                @media (max-width: 1024px) {
+                    width: 22px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    width: 0;
+                    border-right: none;
+                    margin: 0 -14px 0 0;
+                }
+    }
+
+    &__list-li:first-child img {
+        width: 26px;
+        height: 26px;
+            @media (max-width: 768px) {
+                margin: 0 22px 0 0;
+            }
+    }
+
+    &__list-li:first-child a {
+        font-size: 16px;
+            @media (max-width: 1024px) {
+                font-size: 16px;
+            }
+            @media (max-width: 768px) {
+                font-size: 0;
+            }
     }
 
     &__list>li:nth-child(1):hover {
         color: #ffc901;
     }
 
-    &__link {
-
+    &__list-li:nth-child(2) {
+        padding: 0 0 0 0;
+            @media (max-width: 768px) {
+                padding: 0 0 0 0;
+            }
     }
 
+    &__list>li:last-child {
+            @media (max-width: 1250px) {
+                display: none;
+            }
+            @media (max-width: 1024px) {
+                display: none;
+            }
+    }
+
+    &__list-li:last-child {
+        padding: 0 0 0 0;
+            @media (max-width: 1366px) {
+                padding-right: 4px; 
+            }
+            @media (max-width: 1024px) {
+                padding-right: 0; 
+            }
+    }
+
+    &__list-li .nav__list-item:after{
+        content: '|';
+        text-align: right; 
+        width: 66px;
+        font-size: 0;
+        border-right: 1px solid #E5E5E5;
+            @media (max-width: 1650px) {
+                width: 60px; 
+            }
+            @media (max-width: 1600px) {
+                width: 50px; 
+            }
+            @media (max-width: 1550px) {
+                width: 40px; 
+            }
+            @media (max-width: 1366px) {
+                content: ''; 
+                width: 0;
+            }
+    } 
+
+    &__list-li:hover .nav__list-arrow {
+        transform: scaleY(-1);
+    }
+
+    &__list-li:hover .sub-nav__list{
+        display: block;
+    }
 
 }
 
 .sub-nav {
 
-    // .sub-nav__list
-
     &__list {
         display: none;
         position: absolute;
         z-index: 1;
-        left: 30px;
+        left: 0;
         top: 30px;
-        padding: 20px 0 0 0;
+        padding: 20px 0 10px 10px;
         background-color: white;
     }
 
-    &__list > li {
+    &__list-li {
+        padding: 5px 0 0 0;
         z-index: 100;
     }
 
-    // .sub-nav__link
+    &__list-li:first-child {
+        padding: 0;
+        z-index: 100;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+    }
 
     &__link {
         display: inline-block;
@@ -98,3 +230,4 @@
         color: #ffc901;
     }
 }
+

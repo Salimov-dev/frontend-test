@@ -1,85 +1,100 @@
-.content__workmans {
-  min-width: 0;
-  margin: 0 0 120px 0;
-}
-
-.workmans__slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 0;
-  text-align: center;
-  margin: 0 30px 80px 0;
-}
-.workmans__slide:last-child {
-  margin: 0 0 80px 0;
-}
-
-.slide__photo {
-  margin: 0 0 40px 0;
-}
-.slide__photoImg {
-  width: 223px;
-  height: 223px;
-  border-radius: 50%;
-  margin: 0 auto !important;
-}
-.slide__name {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 130%;
-  margin: 0 0 16px 0;
-}
-.slide__about {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 18px;
-  line-height: 160%;
-  margin: 0 0 59px 0;
-}
-.slide__result {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 120%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 0 39px 0;
-}
-.slide__resultImg {
-  padding: 0 10px 0 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.slide__quote {
+.content__content {
+  padding-top: 119px;
   position: relative;
-  background-color: #F6F6F6;
-  line-height: 120%;
-  text-align: left;
-  margin: 0 30px;
-  padding: 16px;
-  border-radius: 14px;
 }
-.slide__quote::before {
+@media (max-width: 1366px) {
+  .content__content {
+    padding-top: 252px;
+  }
+}
+@media (max-width: 1024px) {
+  .content__content {
+    padding-top: 191px;
+  }
+}
+@media (max-width: 768px) {
+  .content__content {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .content__content {
+    padding-top: 24px;
+  }
+}
+.content__content::after {
   content: "";
   position: absolute;
-  z-index: 110;
-  top: -8px;
-  left: 110px;
-  width: 36px;
-  height: 9px;
-  background: url(../img/content/workmans/quoteAngle.PNG) 0 0 no-repeat;
+  height: 1px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #F6F6F6;
+}
+@media (max-width: 1366px) {
+  .content__content::after {
+    content: "";
+    height: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.05)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+}
+@media (max-width: 375px) {
+  .content__content::after {
+    display: none;
+  }
+}
+.content__header {
+  text-align: center;
+}
+.content__header-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  margin: 0 0 40px 0;
+}
+@media (max-width: 1366px) {
+  .content__header-title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 1024px) {
+  .content__header-title {
+    margin: 0 0 33px 0;
+    font-size: 36px;
+  }
+}
+@media (max-width: 375px) {
+  .content__header-title {
+    font-size: 22px;
+    margin: 0 0 24px 0;
+  }
+}
+.content__header-sub-title {
+  font-size: 26px;
+  line-height: 120%;
+  margin: 0 0 80px 0;
+}
+@media (max-width: 1366px) {
+  .content__header-sub-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .content__header-sub-title {
+    font-size: 16px;
+    margin: 0 0 61px 0;
+  }
+}
+@media (max-width: 375px) {
+  .content__header-sub-title {
+    font-size: 14px;
+    padding: 0 70px;
+    margin: 0 0 38px 0;
+  }
 }
