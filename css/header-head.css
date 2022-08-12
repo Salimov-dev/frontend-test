@@ -3,7 +3,7 @@
   height: 26px;
   margin: 8px 12px 0 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .head__logo {
     width: 15px;
     height: 15px;
@@ -45,6 +45,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 250px;
+          flex: 0 0 250px;
+}
+@media (max-width: 650px) {
+  .head__right-side {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
+  }
 }
 .head__nav-list {
   display: -webkit-box;
@@ -79,7 +92,7 @@
   height: 33px;
   margin: 0 0 5px 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .name__img-title {
     width: 149px;
   }
@@ -88,7 +101,7 @@
   width: 166px;
   height: 9px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .name__img-sub-title {
     display: none;
   }
@@ -105,7 +118,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 375px) {
+@media (max-width: 650px) {
   .contact__time-to-call {
     display: none;
   }
@@ -115,7 +128,7 @@
   width: 18px;
   height: 18px;
 }
-@media (max-width: 375px) {
+@media (max-width: 650px) {
   .contact__phone-number-img {
     display: none;
   }
@@ -124,7 +137,7 @@
   padding: 3px 0 0 0;
   margin: -10px 4px 0 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 650px) {
   .contact__green-ellipse-img {
     display: none;
   }
@@ -151,7 +164,7 @@
     line-height: 122.2222222222%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 650px) {
   .contact__phone {
     display: none;
   }
@@ -162,7 +175,7 @@
   font-size: 16px;
   line-height: 125%;
 }
-@media (max-width: 375px) {
+@media (max-width: 650px) {
   .contact__phone-375px {
     display: block;
   }

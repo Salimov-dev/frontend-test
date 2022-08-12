@@ -12,6 +12,7 @@
     align-items: stretch;
     text-align: center;
     justify-content: center;
+    position: relative;
 }
 
 .content__workmans .slick-slide{
@@ -21,6 +22,7 @@
     height: auto;
         @media (max-width: 375px) {
             justify-content: flex-start;
+            height: 100%;
         }
 }
 
@@ -34,7 +36,6 @@
             }
 }
 
-
 .content__workmans .slick-arrow.slick-prev{
     left: -59px;
     background: url(../img/svg/prev-arrow.svg) 0 0 / 100% no-repeat;
@@ -45,7 +46,7 @@
         top: 154px;
         width: 107px;
         }
-        @media (max-width: 375px) {
+        @media (max-width: 500px) {
             left: -22px;
             top: 147px;
             width: 90px;
@@ -58,11 +59,11 @@
     width: 120px;
     height: 120px;
         @media (max-width: 768px) {
-        right: -63px;
+        right: -58px;
         top: 154px;
         width: 107px;
         }
-        @media (max-width: 375px) {
+        @media (max-width: 500px) {
         right: -22px;
         top: 147px;
         width: 90px;

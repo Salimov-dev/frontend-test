@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  // --- SLIDER ---
+
     $('.content__workmans').slick({
         infinite: true,
         slidesToShow: 4,
@@ -20,20 +22,27 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 375,
+            breakpoint: 376,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 600,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           }
         ]
+      });
+
+// --- BURGER ---
+
+      $(".header__burger").click(function(event) {
+        $(".header__burger, .header__nav").toggleClass("active");
+
       });
 
 });

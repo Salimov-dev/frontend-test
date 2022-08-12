@@ -1,68 +1,101 @@
+.content__body {
+    display: grid;
+    grid-template-areas: "a c" 
+                         "b c";
+    grid-template-columns: 60% 40%;
+    @media (max-width: 1366px) {
+        grid-template-columns: 64% 36%;
+    }
+    @media (max-width: 1024px) {
+        grid-template-columns: 65% 35%;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 52% 48%;
+    }
+    @media (max-width: 750px) {
+        grid-template-areas: "a c" 
+                             "b b";  
+    }
+
+
+}
+
+.body__main-info {
+    grid-area: a;
+}
+.body__wrapper {
+    grid-area: b;
+   
+}
+.body__right-bg {
+    grid-area: c;
+}
+
 .header {
 
     overflow: hidden;
 
     &__body {
-        display: flex;
-    }
 
 }
+
 .body {
 
     &__content {
-        flex: 0 0 100%;
+        
     }
 
     &__main-info {
-        width: 58%;
-        padding: 119px 0 140px 0;
+        padding: 119px 0 0 0;
             @media (max-width: 1366px) {
-                width: 49%;
-                padding: 82px 0 146px 0;
+                padding: 80px 0 0 0;
             }
             @media (max-width: 1024px) {
-                padding: 83px 0 84px 0;
+                padding: 84px 0 0 0;
             }
             @media (max-width: 768px) {
-                padding: 83px 0 80px 0;
+                padding: 84px 0 0 0;
             }
             @media (max-width: 375px) {
-                width: 186px;
-                padding: 60px 0 80px 0;
+                padding: 62px 0 0 0;
             }
     }
 
     &__right-bg {
-        flex: 0 0 42%;
-        transform: translate(-100%, 0);
-            @media (max-width: 1366px) {
-                flex: 0 0 49%;
-            }
-            @media (max-width: 1024px) {
-                flex: 0 0 52%;
-            }
+        position: relative;
+        @media (max-width: 750px) {
+
+        }
+    }
+
+    &__right-bg img {
+ 
     }
 
     &__right-img {
-        max-width: 100%;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
         left: 0;
-            @media (max-width: 1366px) {
-                left: 140px;
-            }
-            @media (max-width: 768px) {
-                left: 28px;
-            }
-            @media (max-width: 768px) {
-                // height: 27%;
-            }
-            @media (max-width: 375px) {
-                height: 30%;
-                left: 40px;
-            }
+        bottom: 0;
+        min-width: 796px;
+        height: 100%;
+        @media (max-width: 750px) {
+            min-width: 361px;
+        }
+        @media (max-width: 375px) {
+            min-width: 223px;
+            left: 24px;
+        }
+    }
+
+    &__wrapper {
+        @media (max-width: 750px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
     }
 }
-
+}

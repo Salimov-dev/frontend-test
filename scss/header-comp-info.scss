@@ -24,19 +24,35 @@
                 right: 37px;
                 bottom: 170px;
             }
+            @media (max-width: 1350px) {
+                width: 400px;
+            }
             @media (max-width: 1366px) {
                 right: 37px;
+                bottom: 193px;
+            }
+            @media (max-width: 1250px) {
+                width: 336px;
                 bottom: 220px;
+                padding: 11px 36px;
+            }
+            @media (max-width: 1100px) {
+                width: 302px;
+                padding: 11px 17px;
             }
             @media (max-width: 1024px) {
                 width: 299px;
                 right: 57px;
-                bottom: 128px;
+                bottom: 117px;
                 padding: 10px 25px;
             }
-            @media (max-width: 375px) {
+            @media (max-width: 768px) {
+                right: 74px;
+                bottom: 114px;
+            }
+            @media (max-width: 750px) {
                 right: 38px;
-                bottom: 35px;
+                bottom: 22px;
             }
     }
 }
@@ -57,6 +73,14 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        @media (max-width: 1350px) {
+            font-size: 34px;
+            line-height: 34 / 28 * 100%;
+        }
+        @media (max-width: 1250px) {
+            font-size: 30px;
+            line-height: 34 / 28 * 100%;
+        }
         @media (max-width: 1024px) {
             font-size: 28px;
             line-height: 34 / 28 * 100%;
@@ -64,9 +88,19 @@
     }
 
     &__smile {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         margin: 0 10px 0 0;
+        @media (max-width: 350px) {
+            width: 50px;
+            height: 50px;
+            margin: 0 4px 0 0;
+        }
+        @media (max-width: 1250px) {
+            width: 45px;
+            height: 45px;
+            margin: 0 4px 0 0;
+        }
         @media (max-width: 1024px) {
             width: 40px;
             height: 40px;
@@ -79,8 +113,11 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
-            @media (max-width: 1366px) {
-                // font-size: 18px;
+            @media (max-width: 1350px) {
+                font-size: 16px;
+            }
+            @media (max-width: 1250px) {
+                font-size: 15px;
             }
             @media (max-width: 1024px) {
                 font-size: 14px;

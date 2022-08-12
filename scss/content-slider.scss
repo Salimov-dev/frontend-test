@@ -139,12 +139,12 @@
     &__bottom-block {
         min-height: 224px;
         text-align: left;
-        @media (max-width: 768px) {
-            min-height: 189px;
-        }
-        @media (max-width: 375px) {
-            // height: 80px;
-        }
+            @media (max-width: 768px) {
+                min-height: 189px;
+            }
+            @media (max-width: 375px) {
+                // height: 80px;
+            }
     }
 
 }

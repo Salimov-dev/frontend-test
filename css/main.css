@@ -22,7 +22,7 @@
     padding: 0 59px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   ._container {
     padding: 0 24px;
   }

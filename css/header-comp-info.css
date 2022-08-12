@@ -26,24 +26,48 @@
     bottom: 170px;
   }
 }
+@media (max-width: 1350px) {
+  .body__complite-info {
+    width: 400px;
+  }
+}
 @media (max-width: 1366px) {
   .body__complite-info {
     right: 37px;
+    bottom: 193px;
+  }
+}
+@media (max-width: 1250px) {
+  .body__complite-info {
+    width: 336px;
     bottom: 220px;
+    padding: 11px 36px;
+  }
+}
+@media (max-width: 1100px) {
+  .body__complite-info {
+    width: 302px;
+    padding: 11px 17px;
   }
 }
 @media (max-width: 1024px) {
   .body__complite-info {
     width: 299px;
     right: 57px;
-    bottom: 128px;
+    bottom: 117px;
     padding: 10px 25px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  .body__complite-info {
+    right: 74px;
+    bottom: 114px;
+  }
+}
+@media (max-width: 750px) {
   .body__complite-info {
     right: 38px;
-    bottom: 35px;
+    bottom: 22px;
   }
 }
 
@@ -60,6 +84,18 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+@media (max-width: 1350px) {
+  .complite-info__number {
+    font-size: 34px;
+    line-height: 121.4285714286%;
+  }
+}
+@media (max-width: 1250px) {
+  .complite-info__number {
+    font-size: 30px;
+    line-height: 121.4285714286%;
+  }
+}
 @media (max-width: 1024px) {
   .complite-info__number {
     font-size: 28px;
@@ -67,9 +103,23 @@
   }
 }
 .complite-info__smile {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin: 0 10px 0 0;
+}
+@media (max-width: 350px) {
+  .complite-info__smile {
+    width: 50px;
+    height: 50px;
+    margin: 0 4px 0 0;
+  }
+}
+@media (max-width: 1250px) {
+  .complite-info__smile {
+    width: 45px;
+    height: 45px;
+    margin: 0 4px 0 0;
+  }
 }
 @media (max-width: 1024px) {
   .complite-info__smile {
@@ -83,6 +133,16 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
+}
+@media (max-width: 1350px) {
+  .complite-info__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1250px) {
+  .complite-info__text {
+    font-size: 15px;
+  }
 }
 @media (max-width: 1024px) {
   .complite-info__text {
