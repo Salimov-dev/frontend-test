@@ -324,6 +324,13 @@
             text-align: left;
         }
     }
+    &__list:nth-child(2) {
+        // background-color: #db1818;
+        text-align: left;
+        @media (max-width: 450px) {
+            
+        }
+    }
 
     &__list-li {
         padding: 5px 0 0 0;
@@ -343,7 +350,7 @@
     &__link {
         display: inline-block;
         width: 250px;
-        padding: 0 15px 10px 15px;
+        padding: 0 15px 10px 34px;
         transition: color 0.3s ease-in;
     }
 

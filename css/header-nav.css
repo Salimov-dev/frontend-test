@@ -400,6 +400,9 @@
     text-align: left;
   }
 }
+.sub-nav__list:nth-child(2) {
+  text-align: left;
+}
 .sub-nav__list-li {
   padding: 5px 0 0 0;
   z-index: 100;
@@ -419,7 +422,7 @@
 .sub-nav__link {
   display: inline-block;
   width: 250px;
-  padding: 0 15px 10px 15px;
+  padding: 0 15px 10px 34px;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
