@@ -2,23 +2,23 @@
   font-weight: 800;
   font-size: 80px;
   line-height: 100%;
-  padding: 0 0 58px 0;
+  padding: 117px 0 58px 0;
 }
 @media (max-width: 1366px) {
   .main-info__title {
     font-size: 70px;
-    padding: 0 0 60px 0;
+    padding: 83px 0 60px 0;
   }
 }
 @media (max-width: 1024px) {
   .main-info__title {
-    padding: 0 58px 39px 0;
+    padding: 82px 58px 39px 0;
     font-size: 50px;
   }
 }
 @media (max-width: 768px) {
   .main-info__title {
-    padding: 0 58px 38px 0;
+    padding: 80px 58px 38px 0;
   }
 }
 @media (max-width: 720px) {
