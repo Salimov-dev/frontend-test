@@ -11,24 +11,26 @@
 .servises {
 
     &__wrapper {
-    display: grid;
-    gap: 30px;  
-    grid-template-areas:    "post-1 post-2"  
-                            "post-3 post-4"; 
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    margin: 0 0 120px 0;
+        display: grid;
+        gap: 30px;  
+        grid-template-areas:    "post-1 post-2"  
+                                "post-3 post-4"; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        margin: 0 0 120px 0;
     }
 
 }
 
 .post-1 {
     grid-area: post-1; 
-}        
+}      
+  
 .post-2 {
     grid-area: post-2;
-}        
+}   
+
 .post-3 {
     grid-area: post-3;
     height: 448px;
@@ -44,7 +46,8 @@
         @media (max-width: 768px) {
             height: 141px;
         }
-}        
+}   
+
 .post-4 {
     grid-area: post-4;
     height: 448px;

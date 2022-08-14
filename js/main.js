@@ -22,14 +22,14 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 376,
+            breakpoint: 550,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 650,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1
@@ -41,7 +41,7 @@ $(document).ready(function() {
 // --- BURGER ---
 
       $(".header__burger").click(function(event) {
-        $(".header__burger, .header__nav").toggleClass("active");
+        $(".header__burger, .header__nav").toggleClass("active")
 
       });
 

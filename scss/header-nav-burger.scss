@@ -37,14 +37,14 @@
 
     &__burger.active::before{
         transform: rotate(45deg);
-        top: 10px;
-        left: 8px;
+        top: 11px;
+        left: 7px;
         width: 10px !important;
     }
     &__burger.active::after{
         transform: rotate(-45deg);
-        bottom: 12px;
-        left: 8px;
+        bottom: 11px;
+        left: 7px;
         width: 10px;
     }
 
@@ -71,7 +71,6 @@
     }
 
     &__burger-nav {
-        // position: fixed;
         top: 0;
         left: 0;
         z-index: 102;

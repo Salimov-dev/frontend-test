@@ -1,119 +1,45 @@
 .content__body {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "a c" "b c";
-  -ms-grid-columns: 60% 40%;
-  grid-template-columns: 60% 40%;
-}
-@media (max-width: 1366px) {
-  .content__body {
-    -ms-grid-columns: 64% 36%;
-    grid-template-columns: 64% 36%;
-  }
-}
-@media (max-width: 1024px) {
-  .content__body {
-    -ms-grid-columns: 65% 35%;
-    grid-template-columns: 65% 35%;
-  }
-}
-@media (max-width: 768px) {
-  .content__body {
-    -ms-grid-columns: 52% 48%;
-    grid-template-columns: 52% 48%;
-  }
-}
-@media (max-width: 750px) {
-  .content__body {
-        grid-template-areas: "a c" "b b";
-  }
-}
-
-.body__main-info {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: a;
-}
-
-.body__wrapper {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: b;
-}
-
-.body__right-bg {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: c;
-}
-
-@media (max-width: 750px) {
-  .body__main-info {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .body__wrapper {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .body__right-bg {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-  }
-}
-
-.header {
-  overflow: hidden;
-}
-.header .body__main-info {
-  padding: 119px 0 0 0;
-}
-@media (max-width: 1366px) {
-  .header .body__main-info {
-    padding: 80px 0 0 0;
-  }
-}
-@media (max-width: 1024px) {
-  .header .body__main-info {
-    padding: 84px 0 0 0;
-  }
-}
-@media (max-width: 768px) {
-  .header .body__main-info {
-    padding: 84px 0 0 0;
-  }
-}
-@media (max-width: 375px) {
-  .header .body__main-info {
-    padding: 62px 0 0 0;
-  }
-}
-.header .body__right-bg {
-  position: relative;
-}
-.header .body__right-img {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  min-width: 796px;
+  padding: 0 0 0 0;
   height: 100%;
 }
-@media (max-width: 750px) {
-  .header .body__right-img {
-    min-width: 361px;
-  }
-}
-@media (max-width: 375px) {
-  .header .body__right-img {
-    min-width: 223px;
-    left: 24px;
-  }
+
+.body__content {
+  overflow: hidden;
+  position: relative;
 }
 @media (max-width: 750px) {
-  .header .body__wrapper {
+  .body__content {
+    position: static;
+  }
+}
+.body__main-info {
+  width: 60%;
+  height: 50%;
+  float: left;
+}
+@media (max-width: 1366px) {
+  .body__main-info {
+    width: 64%;
+  }
+}
+@media (max-width: 750px) {
+  .body__main-info {
+    width: 60%;
+    height: 232px;
+  }
+}
+.body__wrapper {
+  height: 50%;
+  width: 60%;
+}
+@media (max-width: 1366px) {
+  .body__wrapper {
+    width: 64%;
+  }
+}
+@media (max-width: 750px) {
+  .body__wrapper {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -128,5 +54,86 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media (max-width: 375px) {
+  .body__wrapper {
+    width: 100%;
+  }
+}
+.body__right-bg {
+  width: 40%;
+  float: right;
+  height: 100%;
+}
+@media (max-width: 1366px) {
+  .body__right-bg {
+    width: 36%;
+  }
+}
+@media (max-width: 750px) {
+  .body__right-bg {
+    width: 40%;
+    float: right;
+    height: 232px;
+    display: block;
+    position: relative;
+  }
+}
+.body__right-bg img {
+  position: absolute;
+  width: 50%;
+  min-width: 796px;
+  height: 126%;
+  top: 46%;
+  left: 58%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+@media (max-width: 1366px) {
+  .body__right-bg img {
+    top: 42%;
+    left: 62%;
+    height: 116%;
+  }
+}
+@media (max-width: 1024px) {
+  .body__right-bg img {
+    top: 44%;
+    left: 62%;
+    height: 119%;
+    min-width: 630px;
+  }
+}
+@media (max-width: 768px) {
+  .body__right-bg img {
+    top: 50%;
+    left: 52%;
+    height: 100%;
+    min-width: 684px;
+  }
+}
+@media (max-width: 750px) {
+  .body__right-bg img {
+    position: absolute;
+    width: 50%;
+    min-width: 311px;
+    height: 115%;
+    top: 43%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+@media (max-width: 375px) {
+  .body__right-bg img {
+    position: absolute;
+    width: 50%;
+    min-width: 207px;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 }

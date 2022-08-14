@@ -12,19 +12,24 @@
 }
 @media (max-width: 1024px) {
   .main-info__title {
-    padding: 0 58px 38px 0;
+    padding: 0 58px 39px 0;
     font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .main-info__title {
+    padding: 0 58px 38px 0;
   }
 }
 @media (max-width: 720px) {
   .main-info__title {
-    padding: 0 0 32px 0;
+    padding: 60px 0 32px 0;
     font-size: 26px;
   }
 }
 @media (max-width: 375px) {
   .main-info__title {
-    padding: 0 0 34px 0;
+    padding: 60px 0 34px 0;
   }
 }
 .main-info__sub-title {
@@ -52,7 +57,7 @@
     width: 470px;
     font-size: 16px;
     line-height: 122%;
-    margin: 0 0 38px 0;
+    margin: 0 0 36px 0;
   }
 }
 @media (max-width: 950px) {
@@ -104,7 +109,7 @@
 @media (max-width: 1366px) {
   .wrapper__advantages {
     width: 100%;
-    padding: 42px 0 121px 0;
+    padding: 39px 0 127px 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -129,10 +134,11 @@
 }
 @media (max-width: 768px) {
   .wrapper__advantages {
-    padding: 23px 0 87px 0;
+    padding: 33px 0 78px 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    width: 90%;
   }
 }
 @media (max-width: 750px) {
@@ -156,6 +162,7 @@
 @media (max-width: 375px) {
   .wrapper__advantages {
     padding: 0 0 104px 0;
+    width: 100%;
   }
 }
 .wrapper__advantages-item {
@@ -188,7 +195,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 21px 0 0;
+    padding: 0 19px 0 0;
     margin: 0 0 30px 0;
   }
 }
@@ -199,9 +206,12 @@
 }
 @media (max-width: 768px) {
   .wrapper__advantages-item {
-    width: 85%;
+    width: 77%;
     padding: 0 0 0 0;
     margin: 0 0 27px 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media (max-width: 750px) {
@@ -216,6 +226,11 @@
             align-items: center;
     padding: 0 6px;
     margin: 0 0 23px 0;
+  }
+}
+@media (max-width: 375px) {
+  .wrapper__advantages-item {
+    padding: 0;
   }
 }
 .wrapper__advantages-item:last-child {
@@ -280,7 +295,6 @@
 @media (max-width: 1024px) {
   .wrapper__item-text {
     font-size: 14px;
-    margin: 5px 0 0 0;
   }
 }
 @media (max-width: 600px) {

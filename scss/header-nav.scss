@@ -3,17 +3,28 @@
     width: 100%;
     z-index: 200;
     justify-content: space-between;
+        @media (max-width: 450px) {
+            padding: 0 0 12px 0;
+            align-items: center;
+        }
+}
+
+.header__word-Menu {
+    display: none;
     @media (max-width: 450px) {
-        padding: 0 0 12px 0;
-        align-items: center;
+        display: inline-block;
+        text-align: left;
+        font-size: 24px;
+        padding: 28px 10px 8px 0;
     }
+
 }
 
 .header__bnt-connect {
     display: none;
-    @media (max-width: 450px) {
-        display: block;
-    }
+        @media (max-width: 450px) {
+            display: block;
+        }
 }
 
 .header {
@@ -21,22 +32,25 @@
     &__nav {
         display: flex;
         width: 1520px;
-        justify-content: space-between;
         position: relative;
         text-align: center;
-        padding: 6px 0 17px 0;
+        padding: 12px 0 15px 0;
             @media (max-width: 1366px) {
-                padding: 7px 0 14px 0;
+                padding: 9px 0 14px 0;
             }
             @media (max-width: 1024px) {
-                padding: 5px 5px 12px 0;
+                padding: 5px 5px 15px 0;
+            }
+            @media (max-width: 85px) {
+                padding: 5px 5px 22px 0;
             }
             @media (max-width: 768px) {
-                padding: 5px 5px 13px 0;
+                padding: 5px 10px 16px 0;
             }
             @media (max-width: 450px) {
+                flex-direction: column;
                 position: fixed;
-                top: -100%;
+                top: -150%;
                 left: 0;
                 z-index: 102;
                 width: 100%;
@@ -82,20 +96,18 @@
                 padding: 0 0 0 0;
             }
             @media (max-width: 450px) {
-                padding: 30px 0;
+                padding: 26px 0;
             }
     }
 
 
     &__list-item {
         display: flex;
-        height: 100%;
         align-items: center;
             @media (max-width: 450px) {
                 border-bottom: 1px solid #F6F6F6;
             }
     }
-
 
     &__list-image {
         display: inline-block;
@@ -137,7 +149,7 @@
         position: relative;
         transition: color 0.3s ease-in;
             @media (max-width: 1366px) {
-                padding-right: 19px; 
+                padding: 0 5px 0 0;
                 border-right: none;
             }
             @media (max-width: 1024px) {
@@ -149,14 +161,16 @@
             }
     }
 
+    // СТРЕЛОЧКИ, СОКРЫТИЕ ЭЛЕМЕНТОВ, ПСЕВДОКЛАССЫ И ДРУГОЕ
+
+    // Вертикальная черта у первого пункта меню
     &__list-li:first-child .nav__list-item:after{
         content: '|';
         font-family: Arial, Helvetica, sans-serif;
         text-align: right; 
-        font-size: 0;
+        font-size: 24px;
         color: #E5E5E5;
         width: 51px;
-        border-right: 1px solid #E5E5E5;
             @media (max-width: 1550px) {
                 width: 30px; 
             }
@@ -178,48 +192,67 @@
                 margin: 0 -14px 0 0;
             }
             @media (max-width: 450px) {
-                font-size: 0px;
+                display: none;
             }
     }
 
+    // отдельно размеры первого слева изображения в меню
     &__list-li:first-child img {
         width: 26px;
         height: 26px;
+            @media (max-width: 850px) {
+                width: 36px;
+            }
             @media (max-width: 768px) {
+                width: 30px;
                 margin: 0 22px 0 0;
             }
+            @media (max-width: 684px) {
+                width: 28px;
+            }
             @media (max-width: 450px) {
-                width: 0x;
-                height: 0;
+                display: none;
             }
     }
 
+    // отдельно размеры первого слева пункта меню в меню
     &__list-li:first-child a {
         font-size: 16px;
             @media (max-width: 1024px) {
                 font-size: 16px;
             }
             @media (max-width: 850px) {
-                font-size: 0;
+                display: none;
             }
     }
 
+    // Ховер на первый пункт
     &__list>li:nth-child(1):hover {
         color: #ffc901;
     }
 
-    &__list-li:nth-child(2) {
-        padding: 0 0 0 0;
-    }
-
-    &__list>li:last-child {
-            @media (max-width: 1250px) {
-                display: none;
+    // Последний элемент в меню появляется в подменю
+    &__list-li:last-child {
+        display: none;
+            @media (max-width: 1024px) {
+                padding: 0 0 0 0;
             }
             @media (max-width: 450px) {
                 display: block;
             }
     }
+
+    // 2ий с конца элемент в меню уходит и появляется в подменю
+    &__list>li:nth-last-child(2) {
+            @media (max-width: 1230px) {
+                display: none;
+            }
+            @media (max-width: 450px) {
+                display: block;
+            }
+}
+
+    // 3ий с конца элемент в меню уходит и появляется в подменю
     &__list>li:nth-last-child(3) {
             @media (max-width: 650px) {
                 display: none;
@@ -228,15 +261,8 @@
                 display: block;
             }
     }
-    &__list>li:nth-last-child(2) {
-            @media (max-width: 1230px) {
-                display: none;
-            }
-            @media (max-width: 450px) {
-                display: block;
-            }
-    }
 
+    // отступы у последнего пункта меню
     &__list-li:last-child(2) {
         padding: 0 0 0 0;
             @media (max-width: 1366px) {
@@ -247,19 +273,14 @@
             }
     }
 
-    &__list-li:last-child {
-        display: none;
-            @media (max-width: 1024px) {
-                padding: 0 0 0 0;
-            }
-    }
-
+    // вертикальная полоска после каждого пункта меню
     &__list-li .nav__list-item:after{
         content: '|';
         text-align: right; 
         width: 66px;
-        font-size: 0;
-        border-right: 1px solid #E5E5E5;
+        font-size: 24px;
+        color: #E5E5E5;
+        line-height: 120%;
             @media (max-width: 1650px) {
                 width: 60px; 
             }
@@ -275,10 +296,12 @@
             }
     } 
 
+    // переворот стрелки на открытии подменю
     &__list-li:hover .nav__list-arrow {
         transform: scaleY(-1);
     }
 
+    // открытие подменю
     &__list-li:hover .sub-nav__list{
         display: block;
     }

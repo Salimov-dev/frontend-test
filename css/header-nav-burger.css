@@ -36,15 +36,15 @@
 .header__burger.active::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 10px;
-  left: 8px;
+  top: 11px;
+  left: 7px;
   width: 10px !important;
 }
 .header__burger.active::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  bottom: 12px;
-  left: 8px;
+  bottom: 11px;
+  left: 7px;
   width: 10px;
 }
 .header__burger::before, .header__burger::after {

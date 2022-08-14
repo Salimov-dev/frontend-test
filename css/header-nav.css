@@ -17,6 +17,18 @@
   }
 }
 
+.header__word-Menu {
+  display: none;
+}
+@media (max-width: 450px) {
+  .header__word-Menu {
+    display: inline-block;
+    text-align: left;
+    font-size: 24px;
+    padding: 28px 10px 8px 0;
+  }
+}
+
 .header__bnt-connect {
   display: none;
 }
@@ -31,32 +43,38 @@
   display: -ms-flexbox;
   display: flex;
   width: 1520px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
   text-align: center;
-  padding: 6px 0 17px 0;
+  padding: 12px 0 15px 0;
 }
 @media (max-width: 1366px) {
   .header__nav {
-    padding: 7px 0 14px 0;
+    padding: 9px 0 14px 0;
   }
 }
 @media (max-width: 1024px) {
   .header__nav {
-    padding: 5px 5px 12px 0;
+    padding: 5px 5px 15px 0;
+  }
+}
+@media (max-width: 85px) {
+  .header__nav {
+    padding: 5px 5px 22px 0;
   }
 }
 @media (max-width: 768px) {
   .header__nav {
-    padding: 5px 5px 13px 0;
+    padding: 5px 10px 16px 0;
   }
 }
 @media (max-width: 450px) {
   .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: fixed;
-    top: -100%;
+    top: -150%;
     left: 0;
     z-index: 102;
     width: 100%;
@@ -116,14 +134,13 @@
 }
 @media (max-width: 450px) {
   .nav__link {
-    padding: 30px 0;
+    padding: 26px 0;
   }
 }
 .nav__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -185,7 +202,7 @@
 }
 @media (max-width: 1366px) {
   .nav__list-li {
-    padding-right: 19px;
+    padding: 0 5px 0 0;
     border-right: none;
   }
 }
@@ -204,10 +221,9 @@
   content: "|";
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
-  font-size: 0;
+  font-size: 24px;
   color: #E5E5E5;
   width: 51px;
-  border-right: 1px solid #E5E5E5;
 }
 @media (max-width: 1550px) {
   .nav__list-li:first-child .nav__list-item:after {
@@ -241,22 +257,32 @@
 }
 @media (max-width: 450px) {
   .nav__list-li:first-child .nav__list-item:after {
-    font-size: 0px;
+    display: none;
   }
 }
 .nav__list-li:first-child img {
   width: 26px;
   height: 26px;
 }
+@media (max-width: 850px) {
+  .nav__list-li:first-child img {
+    width: 36px;
+  }
+}
 @media (max-width: 768px) {
   .nav__list-li:first-child img {
+    width: 30px;
     margin: 0 22px 0 0;
+  }
+}
+@media (max-width: 684px) {
+  .nav__list-li:first-child img {
+    width: 28px;
   }
 }
 @media (max-width: 450px) {
   .nav__list-li:first-child img {
-    width: 0x;
-    height: 0;
+    display: none;
   }
 }
 .nav__list-li:first-child a {
@@ -269,32 +295,22 @@
 }
 @media (max-width: 850px) {
   .nav__list-li:first-child a {
-    font-size: 0;
+    display: none;
   }
 }
 .nav__list > li:nth-child(1):hover {
   color: #ffc901;
 }
-.nav__list-li:nth-child(2) {
-  padding: 0 0 0 0;
+.nav__list-li:last-child {
+  display: none;
 }
-@media (max-width: 1250px) {
-  .nav__list > li:last-child {
-    display: none;
+@media (max-width: 1024px) {
+  .nav__list-li:last-child {
+    padding: 0 0 0 0;
   }
 }
 @media (max-width: 450px) {
-  .nav__list > li:last-child {
-    display: block;
-  }
-}
-@media (max-width: 650px) {
-  .nav__list > li:nth-last-child(3) {
-    display: none;
-  }
-}
-@media (max-width: 450px) {
-  .nav__list > li:nth-last-child(3) {
+  .nav__list-li:last-child {
     display: block;
   }
 }
@@ -305,6 +321,16 @@
 }
 @media (max-width: 450px) {
   .nav__list > li:nth-last-child(2) {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .nav__list > li:nth-last-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .nav__list > li:nth-last-child(3) {
     display: block;
   }
 }
@@ -321,20 +347,13 @@
     padding: 0 0 0 0;
   }
 }
-.nav__list-li:last-child {
-  display: none;
-}
-@media (max-width: 1024px) {
-  .nav__list-li:last-child {
-    padding: 0 0 0 0;
-  }
-}
 .nav__list-li .nav__list-item:after {
   content: "|";
   text-align: right;
   width: 66px;
-  font-size: 0;
-  border-right: 1px solid #E5E5E5;
+  font-size: 24px;
+  color: #E5E5E5;
+  line-height: 120%;
 }
 @media (max-width: 1650px) {
   .nav__list-li .nav__list-item:after {

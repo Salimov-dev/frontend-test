@@ -51,6 +51,15 @@
                 bottom: 114px;
             }
             @media (max-width: 750px) {
+                right: 25%;
+                bottom: 22px;
+            }
+            @media (max-width: 500px) {
+                right: 17%;
+                bottom: 22px;
+            }
+            
+            @media (max-width: 375px) {
                 right: 38px;
                 bottom: 22px;
             }

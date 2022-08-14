@@ -66,6 +66,18 @@
 }
 @media (max-width: 750px) {
   .body__complite-info {
+    right: 25%;
+    bottom: 22px;
+  }
+}
+@media (max-width: 500px) {
+  .body__complite-info {
+    right: 17%;
+    bottom: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .body__complite-info {
     right: 38px;
     bottom: 22px;
   }
